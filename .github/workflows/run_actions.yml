@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd CDAssignment
+            cd CD2
             git clone git@github.com:RonaldPolderman/CD2.git
             echo 'Deployment to Digital ocean completed'
