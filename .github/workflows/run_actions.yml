@@ -1,10 +1,11 @@
 name: Build and deploy
-#run secrets after run-pipeline has runned
+
 on:
   workflow_run:
     workflows: ["Run tests"]
     types:
       - completed
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,8 +15,8 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd CD2
             git clone git@github.com:RonaldPolderman/CD2.git
-            echo 'Deployment to Digital ocean completed'
+            echo 'Deployment to Digital Ocean completed'
