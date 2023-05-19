@@ -1,4 +1,3 @@
-# Import what we need from flask
 from flask import Flask
 
 # Create a Flask app inside `app`

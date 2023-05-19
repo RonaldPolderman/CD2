@@ -1,6 +1,6 @@
 WINC BED CONTINOUS DEPLOYMENT
 
-Short overview
+Short overview.
 This assignment required that I set up a CD (continuous deployment) pipeline. In a nutshell, a developer writes some new code on their local machine, pushes this new code to the repository on github, github then uses a action to automatically test the code, and (if these tests are successful) uploads the new code to the server which is running the application.
 
 THREE COMPONENTS OF THE SOLUTION
