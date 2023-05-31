@@ -20,6 +20,8 @@ jobs:
             cd CD2
             if [ -d .git ]; then
               git pull origin main
+            else
+              git clone https://github.com/RonaldPolderman/CD2.git
             fi
             echo 'Deployment to Digital Ocean completed'
             sudo systemctl restart nginx
