@@ -21,3 +21,4 @@ jobs:
             git clone https://github.com/RonaldPolderman/CD2.git
             echo 'Deployment to Digital Ocean completed'
             sudo systemctl restart nginx
+          debug: true
