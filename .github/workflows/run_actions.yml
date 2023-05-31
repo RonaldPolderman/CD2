@@ -18,7 +18,11 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd CD2
-            git clone https://github.com/RonaldPolderman/CD2.git
+            if { -d .git }; then
+              git pull origin main
+            else
+              git clone https://github.com/RonaldPolderman/CD2.git
+            fi
             echo 'Deployment to Digital Ocean completed'
             sudo systemctl restart nginx
           debug: true
