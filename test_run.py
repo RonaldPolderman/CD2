@@ -3,14 +3,6 @@ import main
 import io
 
 
-# def test_main(capsys):
-#     # Test on a short snippet first
-#     sys.stdin = io.StringIO("abcdef")
-#     sys.argv = ["main.py", "f"]
-
-#     main.index
-
-
 def test_index():
     # Mock the Flask app
     app = main.app.test_client()
