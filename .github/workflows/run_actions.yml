@@ -9,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    needs: run-tests
+    if: ${{ needs.run-tests.result == 'success' }}
     steps:
       - name: deploy Winc app
         uses: appleboy/ssh-action@master
