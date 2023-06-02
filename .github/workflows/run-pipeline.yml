@@ -8,7 +8,6 @@ on:
 
 jobs:
   run-tests:
-    id: run-tests
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repository
