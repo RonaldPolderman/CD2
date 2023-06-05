@@ -1,4 +1,4 @@
-import sys
+import pytest
 import main
 import io
 
@@ -17,5 +17,5 @@ def test_index():
     assert response.data.decode("utf-8") == "Hello, world!"
 
 
-# Run the tests
-test_index()
+if __name__ == "__main__":
+    pytest.main(["-v"])

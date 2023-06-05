@@ -26,5 +26,3 @@ Working Git actions
 I had an issue with getting my gitactions working.
 Some workflow names where incorrect.
 Before I found the link above I didn't get the connection working with droplet to update the site. Fixing the names so the test did run. Creating the correct connection with github and adding the right secrets
-
-In the end i didn't struggle too much with this assignment. Had some help from Google and Chatgpt to solve some small issues.
